@@ -1,0 +1,24 @@
+
+Viết chương trình nhập vào một mảng gồm 50 phần tử các phần tử nhận giá trị random từ 1 – 100.
+•	In mảng
+•	Tìm min, max
+•	Đếm số lần xuất hiện các số nguyên tố có trong mảng
+-	Gợi ý: tạo một phương thức boolean checkPrime(int n) trả về true nếu n là số nguyên tố trả về false nếu n không phải số nguyên tố. Dựa vào hàm này để tìm kiếm số nguyên tố có trong mảng.
+Phần II (Thực hành buổi chiều)
+Bài tập quản lý sinh viên – Tạo một ứng dụng JAVA CORE quản lý sinh viên như sau.
+•	Tạo package: model  Tạo class: Student trong package này với các thuộc tính sau: id (int), name (String), age (int).
+•	Tạo package: navbar  Tạo class: Navbar  Tạo một Menu sau trong contructor Navbar() có hình dạng như sau:
+***************STUDENT MANAGE***************************
+1.	Show List Student.
+2.	Create Student
+3.	Update Student
+4.	Delete Student
+5.	Sort Student By Age ASC (Tăng Dần).
+Gợi ý: tạo một hàm main() trong class: Navbar sau đó gọi new Navbar() để gọi contructor để vẽ ra giao diện.
+•	Tạo package: view  Tạo class: StudentView. Class này có chức năng tạo các phương thức để thực thi phần điều lệnh từ class: Navbar
+1.	Phương thức: showListStudent(): có chức năng hiển thị toàn bộ sinh viên
+2.	Phương thức: createStudent(): để nhập xuất dữ liệu đầu vào và thêm sinh viên vào mảng. (Chưa yêu cầu học viên phải thực hiện validate dữ liệu đầu vào)  Yêu cầu khi tạo id phải tăng dần ngay cả khi xóa đi học viên. Nhớ lại Module1 nào!
+3.	Phương thức: updateStudent(): để sửa thông tin học viên
+4.	Phương thức: xóa học viên
+5.	Phương thức: sortStudentByAge(): Sắp xếp tăng dần theo tuổi
+-	Gợi ý: Sử dụng 1 switch-case bên contructor() của class Navbar. Sau khi lựa chọn theo các số 1  5 thì thực hiện gọi  new StudentView().phương thức tương ứng
