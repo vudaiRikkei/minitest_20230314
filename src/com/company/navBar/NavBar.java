@@ -52,7 +52,7 @@ public class NavBar {
             studentsNew[i] = students[i];
         }
         studentsNew[students.length] = view.getInfoStudent();
-        studentsNew[students.length].setId(students[students.length - 1].getId() + 1);
+        studentsNew[students.length].setId(getMaxId(students) + 1);
         return studentsNew;
     }
 
@@ -96,5 +96,15 @@ public class NavBar {
         int indexEdit = getIndexStdById(students, idEdit);
         students[indexEdit].setName(student.getName());
         students[indexEdit].setAge(student.getAge());
+    }
+
+    public static int getMaxId(Student[] students){
+        int maxId = students[0].getId();
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].getId() > maxId){
+                maxId = students[i].getId();
+            }
+        }
+        return maxId;
     }
 }
